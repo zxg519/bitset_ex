@@ -74,12 +74,25 @@ public:
 				cout << 1;
 			else
 				cout << 0;
+            if(i % cluster_output == 0)
+                cout<<" ";
 		}		
 		cout << endl;
 	}
+public:
+    void set_output_format(const int output_cluster_digits = 8) // 如： 111101 00110011 11110000， 即多少个bit后输出空格分开！
+    {
+        if(output_cluster_digits <= 0)
+        {
+            cluster_output = 8;   // 非法输入，强制设置为8-bit连续输出，从低位到高位！
+        }
+        cluster_output = output_cluster_digits;
+    }
+    
 protected:
 	long*  data;
-	int    long_size;
-	int    bit_size;
+	int    long_size;         // 多少位整数，内部使用！！！    
+	int    bit_size;          // 位数
+    int    cluster_output;    // 连续多少位输出后加分隔空格，如 1111 0000, 或者 11110000 00110011 ，或者 11 1111100000 0011001100
 	const static int long_bit_size = sizeof(long)*8;
 };

@@ -27,8 +27,10 @@ int main()
 	b.set();
 	b.print();
 	b.reset(10);
+    b.set_output_format(8);
 	b.print();
 	b.reset();
+    b.set_output_format(10);
 	b.print();
 	for (int i = 10; i < 50; ++i)
 	{
@@ -47,6 +49,7 @@ int main()
 	b.reset(40);
 	assert(b[40] == false);
 	assert(b.test(40) == false);
+    b.set_output_format(8);
 	b.print();
 	cout << endl;
 }
