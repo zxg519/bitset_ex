@@ -19,20 +19,20 @@ please contact zxg519@sina.com or xgzhang at seu.edu.cn if you have any question
 # A simple example
 int main()  
 {  
-   $    $bitset_ex bs(7);   
-   $    $bs.set();   
-   bs.set_output_format(4);   
-   bs.print();     
+   &nbsp;&nbsp;&nbsp;bitset_ex bs(7);   
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.set();   
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.set_output_format(4);   
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.print();     
    
-   bs.set(1);     
-   bs.set(2);     
-   bs.reset(3);     
-   bs.print();     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.set(1);     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.set(2);     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.reset(3);     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.print();     
    
-   if(bs.test(2))    
-       cout<<"good"<<endl;    
-   else  
-       cout<<"bad"<<endl;  
+   &nbsp;&nbsp;&nbsp;&nbsp;if(bs.test(2))    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout<<"good"<<endl;    
+   &nbsp;&nbsp;&nbsp;&nbsp;else  
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout<<"bad"<<endl;  
 }
  
 
