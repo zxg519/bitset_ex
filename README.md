@@ -17,33 +17,22 @@ a C++ bitset class which allows set bit-number during run time. As know, the sta
 please contact zxg519@sina.com or xgzhang at seu.edu.cn if you have any question to use the class.
 
 # A simple example
-int main()
-
-{
-
-   bitset_ex bs(7);
+int main()  
+{  
+   bitset_ex bs(7);   
+   bs.set();   
+   bs.set_output_format(4);   
+   bs.print();     
    
-   bs.set();
+   bs.set(1);     
+   bs.set(2);     
+   bs.reset(3);     
+   bs.print();     
    
-   bs.set_output_format(4);
-   
-   bs.print();
-   
-   
-   bs.set(1);
-   
-   bs.set(2);
-   
-   bs.reset(3);
-   
-   bs.print();
-   
-   
-   if(bs.test(2))  
-       cout<<"good"<<endl;  
+   if(bs.test(2))    
+       cout<<"good"<<endl;    
    else  
        cout<<"bad"<<endl;  
-
 }
  
 
