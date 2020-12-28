@@ -19,8 +19,8 @@ please contact zxg519@sina.com or xgzhang at seu.edu.cn if you have any question
 # A simple example
 int main()  
 {  
-   $~~~~$ bitset_ex bs(7);   
-   $~~~~$ bs.set();   
+   $    $bitset_ex bs(7);   
+   $    $bs.set();   
    bs.set_output_format(4);   
    bs.print();     
    
