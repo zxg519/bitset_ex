@@ -67,15 +67,14 @@ public:
 
 	void print()
 	{
-		bool if_start = false;
 		for (int i = bit_size - 1; i >= 0; --i)
 		{
 			if ((*this)[i] == true)
 				cout << 1;
 			else
 				cout << 0;
-            if(i % cluster_output == 0)
-                cout<<" ";
+                        if(i % cluster_output == 0)
+                                cout<<" ";
 		}		
 		cout << endl;
 	}
