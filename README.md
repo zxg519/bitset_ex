@@ -39,13 +39,10 @@ int main()
    bs.print();
    
    
-   if(bs[2])
-   
-       cout<<"good"<<endl;
-   
-   else
-   
-       cout<<"bad"<<endl;
+   if(bs.test(2))  
+       cout<<"good"<<endl;  
+   else  
+       cout<<"bad"<<endl;  
 
 }
  
