@@ -92,6 +92,6 @@ protected:
 	long*  data;
 	int    long_size;         // 多少位整数，内部使用！！！    
 	int    bit_size;          // 位数
-    int    cluster_output;    // 连续多少位输出后加分隔空格，如 1111 0000, 或者 11110000 00110011 ，或者 11 1111100000 0011001100
+        int    cluster_output;    // 连续多少位输出后加分隔空格，如 1111 0000, 或者 11110000 00110011 ，或者 11 1111100000 0011001100
 	const static int long_bit_size = sizeof(long)*8;
 };
