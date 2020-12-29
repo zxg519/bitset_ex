@@ -24,10 +24,14 @@ int main()
    &nbsp;&nbsp;&nbsp;&nbsp;bs.set_output_format(4);   
    &nbsp;&nbsp;&nbsp;&nbsp;bs.print();     
    
-   &nbsp;&nbsp;&nbsp;&nbsp;bs.set(1);     
-   &nbsp;&nbsp;&nbsp;&nbsp;bs.set(2);     
-   &nbsp;&nbsp;&nbsp;&nbsp;bs.reset(3);     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.set(3);     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.reset(2);     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.reset(4);     
    &nbsp;&nbsp;&nbsp;&nbsp;bs.print();     
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;bs[2] = true;     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs[3] = false;     
+   &nbsp;&nbsp;&nbsp;&nbsp;bs.print();      
    
    &nbsp;&nbsp;&nbsp;&nbsp;if(bs.test(2))    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout<<"good"<<endl;    
