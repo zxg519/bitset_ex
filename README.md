@@ -14,6 +14,8 @@ a C++ bitset class which allows set bit-number during run time. As know, the sta
 
 6. set_output_format(const int cluster_bit_size) - set output format
 
+7. operator[] - set to true or set to false 
+
 please contact zxg519@sina.com or xgzhang at seu.edu.cn if you have any question to use the class.
 
 # A simple example
